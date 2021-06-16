@@ -15,3 +15,10 @@ export const applyNumber = (number) => {
         payload:number
     });
 }
+
+export const changeOperation = (operator) => {
+    return({
+        type: CHANGE_OPERATION,
+        payload: operator 
+    })
+}
