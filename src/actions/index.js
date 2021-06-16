@@ -5,6 +5,8 @@ export const CHANGE_OPERATION = "CHANGE_OPERATION";
 
 export const CLEAR_DISPLAY = "CLEAR_DISPLAY";
 
+export const ADD_MEMORY = "ADD_MEMORY";
+
 export const addOne = () => {
     return({
         type:ADD_ONE
@@ -29,4 +31,11 @@ export const clearDisplay = () => {
     return({
         type: CLEAR_DISPLAY
     });
+}
+
+export const addMemory = (memory) => {
+    return({
+        type: ADD_MEMORY,
+        payload: memory
+    })
 }
