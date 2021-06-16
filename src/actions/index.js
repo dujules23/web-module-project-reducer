@@ -5,7 +5,9 @@ export const CHANGE_OPERATION = "CHANGE_OPERATION";
 
 export const CLEAR_DISPLAY = "CLEAR_DISPLAY";
 
-export const ADD_MEMORY = "ADD_MEMORY";
+export const ADD_TO_MEMORY = "ADD_TO_MEMORY";
+
+export const COMBINE_MEMORY = "COMBINE_MEMORY";
 
 export const addOne = () => {
     return({
@@ -33,9 +35,15 @@ export const clearDisplay = () => {
     });
 }
 
-export const addMemory = (memory) => {
+export const addToMemory = (memory) => {
     return({
-        type: ADD_MEMORY,
+        type: ADD_TO_MEMORY,
         payload: memory
+    })
+}
+
+export const combineMemory = () => {
+    return({
+        type: COMBINE_MEMORY
     })
 }
