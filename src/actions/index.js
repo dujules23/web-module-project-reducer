@@ -9,6 +9,8 @@ export const ADD_TO_MEMORY = "ADD_TO_MEMORY";
 
 export const COMBINE_MEMORY = "COMBINE_MEMORY";
 
+export const CLEAR_MEMORY = "CLEAR_MEMORY";
+
 export const addOne = () => {
     return({
         type:ADD_ONE
@@ -45,5 +47,11 @@ export const addToMemory = (memory) => {
 export const combineMemory = () => {
     return({
         type: COMBINE_MEMORY
+    })
+}
+
+export const clearMemory = () => {
+    return({
+        type: CLEAR_MEMORY
     })
 }
